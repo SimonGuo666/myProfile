@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-dim":"#121318","inverse-on-surface":"#2f3036","surface-container-highest":"#34343a","on-error-container":"#ffdad6","on-primary-fixed-variant":"#004f58","on-tertiary":"#003919","surface-container-lowest":"#0d0e13","surface-container-low":"#1a1b21","surface-container-high":"#292a2f","surface":"#121318","inverse-primary":"#006875","outline":"#849396","inverse-surface":"#e3e1e9","on-tertiary-fixed":"#00210c","primary-fixed":"#9cf0ff","on-primary":"#00363d","secondary":"#ffc080","surface-tint":"#00daf3","surface-variant":"#34343a","tertiary":"#aeffbf","on-secondary-container":"#643900","on-secondary":"#4a2800","on-secondary-fixed-variant":"#693c00","error":"#ffb4ab","tertiary-fixed":"#60ff99","on-error":"#690005","secondary-fixed":"#ffdcbd","secondary-fixed-dim":"#ffb86f","surface-container":"#1e1f25","on-surface-variant":"#bac9cc","on-secondary-fixed":"#2c1600","error-container":"#93000a","tertiary-container":"#00ef7f","background":"#121318","primary":"#c3f5ff","on-background":"#e3e1e9","primary-fixed-dim":"#00daf3","on-tertiary-container":"#006733","on-tertiary-fixed-variant":"#005228","on-primary-container":"#00626e","primary-container":"#00e5ff","secondary-container":"#fe9800","surface-bright":"#38393f","tertiary-fixed-dim":"#00e479","on-surface":"#e3e1e9","outline-variant":"#3b494c","on-primary-fixed":"#001f24"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-xs":"0.25rem","margin-lg":"4rem","margin-sm":"1rem","space-md":"1rem","space-sm":"0.5rem","space-xl":"2.5rem","gutter":"1.5rem","margin":"2rem","gutter-sm":"1rem","gutter-lg":"2rem","space-lg":"1.5rem"},fontFamily:{"headline-lg":["Space Grotesk"],"display-lg-mobile":["Space Grotesk"],"telemetry-readout":["JetBrains Mono"],"headline-xl":["Space Grotesk"],"body-lg":["Hanken Grotesk"],"body-md":["Hanken Grotesk"],"headline-xl-mobile":["Space Grotesk"],"headline-md":["Space Grotesk"],"label-xs":["JetBrains Mono"],"display-lg":["Space Grotesk"],"body-sm":["Hanken Grotesk"],"label-code":["JetBrains Mono"]},fontSize:{"headline-lg":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"500"}],"display-lg-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"600"}],"telemetry-readout":["16px",{lineHeight:"22px",letterSpacing:"0.08em",fontWeight:"600"}],"headline-xl":["40px",{lineHeight:"48px",letterSpacing:"-0.02em",fontWeight:"500"}],"body-lg":["18px",{lineHeight:"28px",letterSpacing:"0em",fontWeight:"400"}],"body-md":["15px",{lineHeight:"24px",letterSpacing:"0.01em",fontWeight:"400"}],"headline-xl-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"500"}],"headline-md":["22px",{lineHeight:"30px",letterSpacing:"0em",fontWeight:"500"}],"label-xs":["10px",{lineHeight:"14px",letterSpacing:"0.16em",fontWeight:"400"}],"display-lg":["56px",{lineHeight:"64px",letterSpacing:"-0.03em",fontWeight:"600"}],"body-sm":["13px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"400"}],"label-code":["12px",{lineHeight:"16px",letterSpacing:"0.12em",fontWeight:"500"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-20 w-full px-gutter-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><img alt="Simon Guo Aviator Monogram" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VM9HazWYGD8-knrjopkXHuVAsfDKSYA7ZDa18EoQs_1WVwJ6Vv582Cctk6zsfWVE-BK1C8JVafPeFJSMNM7v6M7HkX9RX78YYQXugaDrO2ixw5R7Lsp6WN071-jTiHbYN1_LYFJJ8aXkrdfMEOFHfp7HsfHZGOzceTKD4mkeJb-7FHYzywkX-b6MKYnl8ukAAxXY-_SeFOcROjkg7U3lml53W0mgnWuOA4IWAeiNRrUynUUK-Srhh4tJ5d"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-md tracking-tight uppercase text-on-surface">Simon Guo</span><span class="font-label-code text-label-code px-space-xs py-0.5 rounded bg-surface-container-high text-primary tracking-widest font-mono">N-314FT</span></div><span class="font-label-xs text-label-xs text-on-surface-variant uppercase tracking-wider">Aeronautical Science // Florida Tech</span></div><div class="hidden xl:flex items-center gap-space-xs pl-space-md bg-surface-container/60 rounded px-space-sm py-1"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary-container opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary-container"></span></span><span class="font-label-xs text-label-xs text-tertiary uppercase tracking-wider">STATUS: ACTIVE STUDENT PILOT @ KMLB (FLORIDA TECH)</span></div></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-medium rounded"><a aria-current="page" class="px-space-md py-space-xs tracking-wider uppercase transition-colors bg-primary-container text-on-primary-container font-medium rounded" data-path="about" href="#">About</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-on-surface font-label-code text-label-code tracking-wider uppercase transition-colors" data-path="flight-training" href="#">Flight Training</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-on-surface font-label-code text-label-code tracking-wider uppercase transition-colors" data-path="academics" href="#">Academics</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-on-surface font-label-code text-label-code tracking-wider uppercase transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md"><div class="hidden md:flex flex-col text-right font-label-xs text-label-xs text-primary-fixed-dim"><span class="font-telemetry-readout text-label-xs tracking-wider">ELEV 33FT</span><span class="font-label-xs text-label-xs text-on-surface-variant">LAT 28.1028° N | LON 80.6453° W</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background flex-1"><div class="flex flex-col w-full relative overflow-hidden bg-surface-container-lowest text-on-surface">
+<!-- HUD Reticle / Radial Ambient Background Layer -->
+<div class="absolute inset-0 pointer-events-none opacity-40 z-0">
+<div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[850px] h-[850px] rounded-full bg-radial from-primary/10 via-transparent to-transparent blur-3xl"></div>
+<div class="absolute top-[60%] right-[-100px] w-[500px] h-[500px] rounded-full bg-radial from-secondary/10 via-transparent to-transparent blur-3xl"></div>
+<!-- Concentric Nav Range Rings -->
+<svg class="absolute top-24 left-1/2 -translate-x-1/2 w-[1100px] h-[1100px] text-primary/10 stroke-current fill-none pointer-events-none" viewbox="0 0 1000 1000">
+<circle cx="500" cy="500" r="220" stroke-dasharray="4 6" stroke-width="1"></circle>
+<circle cx="500" cy="500" r="360" stroke-dasharray="6 8" stroke-width="1"></circle>
+<circle cx="500" cy="500" r="490" stroke-dasharray="8 12" stroke-width="1"></circle>
+<line stroke-dasharray="2 4" stroke-width="0.75" x1="500" x2="500" y1="0" y2="1000"></line>
+<line stroke-dasharray="2 4" stroke-width="0.75" x1="0" x2="1000" y1="500" y2="500"></line>
+</svg>
+</div>
+<!-- SECTION 1: HERO VIEWPORT -->
+<section class="relative z-10 w-full px-margin-sm md:px-margin lg:px-margin-lg pt-space-xl pb-space-xl">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<!-- Header Telemetry Ribbon -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm bg-surface-container-low/70 backdrop-blur-md px-space-md py-space-xs rounded-lg shadow-sm">
+<div class="flex items-center gap-space-sm">
+<span class="flex h-2 w-2 rounded-full bg-tertiary-container animate-ping"></span>
+<span class="font-label-code text-label-code text-tertiary tracking-widest uppercase">NAV-1 ACTIVE // 110.0 MLB</span>
+<span class="text-outline-variant font-label-code text-label-code">|</span>
+<span class="font-label-code text-label-code text-on-surface-variant uppercase">FLORIDA TECH FLIGHT OPS</span>
+</div>
+<div class="flex items-center gap-space-md font-label-code text-label-code text-primary-fixed-dim">
+<span>QNH: 30.04 INHG</span>
+<span class="hidden sm:inline text-outline-variant">•</span>
+<span class="hidden sm:inline">WND: 080° / 09KT</span>
+<span class="hidden md:inline text-outline-variant">•</span>
+<span class="hidden md:inline text-secondary">TRANSPONDER: 1200 VFR</span>
+</div>
+</div>
+<!-- Main Hero Pitch Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Hero Text Column -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code text-label-code px-space-xs py-0.5 rounded bg-surface-container-high text-primary tracking-widest uppercase font-mono">AEROSPACE DEPT // FIT-AV-2029</span>
+<span class="font-label-code text-label-code px-space-xs py-0.5 rounded bg-surface-container-high text-secondary tracking-widest uppercase">KMLB BASE</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h1 class="font-display-lg text-display-lg-mobile lg:text-display-lg uppercase tracking-tight text-on-surface leading-tight font-semibold">
+              Simon <span class="text-primary-fixed-dim">Guo</span>
+</h1>
+<p class="font-headline-md text-headline-md text-primary font-medium">
+              Aeronautical Science Student &amp; Future Aviator @ Florida Tech
+            </p>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+            Chasing the horizon. Blending the art of flight with aeronautical precision, advanced glass-cockpit systems, and rigorous FAA standards.
+          </p>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-sm">
+<a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded bg-primary-container/20 text-primary-container font-label-code text-label-code tracking-widest uppercase shadow-md hover:bg-primary-container hover:text-on-primary-container transition-all" href="#flight-log">
+<span>View Flight Log</span>
+<span class="material-symbols-outlined text-[16px]">arrow_downward</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded bg-surface-container-high/80 backdrop-blur-md text-on-surface font-label-code text-label-code tracking-widest uppercase shadow-sm hover:bg-surface-container-highest transition-all" href="#contact">
+<span class="material-symbols-outlined text-[16px] text-primary">send</span>
+<span>Get In Touch</span>
+</a>
+</div>
+<!-- Micro Telemetry Ticker -->
+<div class="grid grid-cols-3 gap-space-sm pt-space-md">
+<div class="flex flex-col bg-surface-container/60 p-space-sm rounded shadow-sm">
+<span class="font-label-xs text-label-xs text-on-surface-variant uppercase">CALLSIGN</span>
+<span class="font-telemetry-readout text-telemetry-readout text-primary">N-314FT</span>
+</div>
+<div class="flex flex-col bg-surface-container/60 p-space-sm rounded shadow-sm">
+<span class="font-label-xs text-label-xs text-on-surface-variant uppercase">AIRFRAME</span>
+<span class="font-telemetry-readout text-telemetry-readout text-on-surface">PA-28-181</span>
+</div>
+<div class="flex flex-col bg-surface-container/60 p-space-sm rounded shadow-sm">
+<span class="font-label-xs text-label-xs text-on-surface-variant uppercase">FIT SQUADRON</span>
+<span class="font-telemetry-readout text-telemetry-readout text-secondary">PANTHERS</span>
+</div>
+</div>
+</div>
+<!-- Aircraft Media & Cockpit HUD Vector Overlay -->
+<div class="lg:col-span-6 relative">
+<!-- Glass Card Wrapping the Aircraft Photo -->
+<div class="relative rounded-xl overflow-hidden bg-surface-container-low shadow-xl">
+<!-- HUD Card Header -->
+<div class="flex items-center justify-between px-space-md py-space-xs bg-surface-container-high/90">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-xs text-label-xs tracking-wider uppercase text-on-surface-variant">SENSOR FEED // FIT RAMP APRON 4</span>
+</div>
+<span class="font-label-xs text-label-xs text-primary font-mono">LIVE CAM KMLB</span>
+</div>
+<!-- Aircraft Image -->
+<div class="relative w-full aspect-16/10 overflow-hidden">
+<img alt="Simon Guo Florida Tech Piper Archer PA-28 N314FT on Melbourne KMLB Ramp at Twilight" class="w-full h-full object-cover object-center filter saturate-110 contrast-105" src="https://lh3.googleusercontent.com/aida/AEtjO1UGJmZ75v-e1_r84b_6T73qL7g1-D2jJtW1tJv-0kXq89uIeQWv77vHnB3z57NqGjY6g1cO2kK87GfH_Y9oK0dJ1f67"/>
+<!-- HUD Overlay Over Photo -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80 pointer-events-none"></div>
+<!-- Overlaid Avionics Corner Badges -->
+<div class="absolute top-space-sm left-space-sm flex flex-col gap-1">
+<span class="font-label-xs text-label-xs bg-surface-container-lowest/85 text-primary px-space-xs py-0.5 rounded uppercase font-mono backdrop-blur-sm">
+                  AIRCRAFT: PIPER PA-28 ARCHER TX
+                </span>
+<span class="font-label-xs text-label-xs bg-surface-container-lowest/85 text-secondary px-space-xs py-0.5 rounded uppercase font-mono backdrop-blur-sm">
+                  TAIL: N314FT // FIT AV
+                </span>
+</div>
+<div class="absolute bottom-space-sm right-space-sm">
+<span class="font-label-xs text-label-xs bg-surface-container-lowest/85 text-tertiary px-space-xs py-0.5 rounded uppercase font-mono backdrop-blur-sm">
+                  LOC: KMLB MELBOURNE ORLANDO INTL
+                </span>
+</div>
+</div>
+<!-- Garmin G1000 PFD Emulation Widget -->
+<div class="bg-surface-container/95 p-space-md grid grid-cols-3 gap-space-sm text-center">
+<!-- Airspeed Ribbon -->
+<div class="flex flex-col items-center justify-center bg-surface-container-lowest/80 p-space-xs rounded">
+<span class="font-label-xs text-label-xs text-on-surface-variant">AIRSPEED (IAS)</span>
+<span class="font-telemetry-readout text-telemetry-readout text-primary font-bold">115 KT</span>
+<span class="font-label-xs text-label-xs text-tertiary">V_NO 125</span>
+</div>
+<!-- Attitude Horizon Core -->
+<div class="flex flex-col items-center justify-center bg-surface-container-lowest/80 p-space-xs rounded relative overflow-hidden">
+<div class="absolute inset-x-0 h-0.5 top-1/2 bg-primary-container/40"></div>
+<span class="font-label-xs text-label-xs text-secondary font-bold">HDG 095°</span>
+<div class="flex items-center gap-1 my-0.5">
+<span class="material-symbols-outlined text-primary text-[18px]">flight</span>
+<span class="font-label-xs text-label-xs text-primary-fixed">PITCH 0°</span>
+</div>
+<span class="font-label-xs text-label-xs text-on-surface-variant">ROLL 00° LEVEL</span>
+</div>
+<!-- Altitude Ribbon -->
+<div class="flex flex-col items-center justify-center bg-surface-container-lowest/80 p-space-xs rounded">
+<span class="font-label-xs text-label-xs text-on-surface-variant">ALTITUDE (MSL)</span>
+<span class="font-telemetry-readout text-telemetry-readout text-primary font-bold">3,500 FT</span>
+<span class="font-label-xs text-label-xs text-secondary">MLB VOR 110.0</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: ABOUT ME / PILOT DOSSIER -->
+<section class="relative z-10 w-full px-margin-sm md:px-margin lg:px-margin-lg py-space-xl bg-surface-container/30">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<!-- Section Title Header -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code text-label-code text-primary uppercase font-mono tracking-widest">// PILOT DOSSIER // 01</span>
+<span class="h-px w-16 bg-primary/40"></span>
+</div>
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl uppercase font-semibold text-on-surface">
+          Student Aviator Profile
+        </h2>
+</div>
+<!-- Narrative & Quick Bio -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+            I am an undergraduate candidate majoring in <span class="text-primary font-medium">Aeronautical Science with Flight</span> at the 
+            <span class="text-on-surface font-medium">Florida Institute of Technology (FIT)</span> in Melbourne, Florida. Operating out of Melbourne Orlando International Airport (KMLB), 
+            my flight training bridges high-density Class D &amp; C airspace navigation with advanced Garmin glass cockpits.
+          </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            My collegiate aviation journey is rooted in deep systems comprehension: mastering aircraft reciprocating engines, fluid aerodynamics, crew coordination, and FAA Part 141 precision procedures. My goal is clear and unwavering: earning my Private Pilot Certificate (PPL), advancing through Commercial Multi-Engine and CFI ratings, and embarking on a premier airline flight deck career.
+          </p>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<span class="px-space-sm py-1 rounded bg-surface-container-high text-primary font-label-code text-label-code uppercase tracking-wider">FAA PART 141 STUDENT</span>
+<span class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface-variant font-label-code text-label-code uppercase tracking-wider">COLLEGIATE AVIATION</span>
+<span class="px-space-sm py-1 rounded bg-surface-container-high text-tertiary font-label-code text-label-code uppercase tracking-wider">G1000 NXi QUALIFIED</span>
+</div>
+</div>
+<!-- Secondary Imagery / Ramp Snapshot -->
+<div class="lg:col-span-5 relative">
+<div class="rounded-xl overflow-hidden bg-surface-container-low shadow-lg">
+<div class="relative w-full aspect-4/3">
+<img class="w-full h-full object-cover" data-alt="A modern collegiate aeronautics flight training student Simon Guo wearing an aviation headset sitting in a Garmin G1000 glass cockpit Piper Archer airplane during pre-flight checks at twilight, glowing screens reflecting in cockpit windows, Melbourne Florida, cinematic avionics photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSRYku2UaXa82V6efYqI3FcUUVrQgcyE780kGXy8LAvL1y4EYlzeqO5HJ31pRaw6ap6HFOEaa3VT5sMRUXnCaWACzxMSPowWmb_qkI0TTQjcvxt_yQo2h3gsQeyz1OO7bQ_WL0avXVJAJHtsRBnFzaRzlyc9ioRaYfoQOxjoBqPbNmMmVzQn4skewMcDgoO95C2YYex_nkFPS1OA8lQbltWNnxbxoAJ3LgYo0MHzpt5iKRxQ6W5MzR7w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-transparent"></div>
+<div class="absolute bottom-space-md left-space-md right-space-md flex flex-col">
+<span class="font-label-code text-label-code text-primary uppercase font-mono">COCKPIT PERSPECTIVE // PRE-FLIGHT</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Garmin G1000 PFD &amp; MFD system cross-check prior to taxi clearance.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 3 Glassmorphism Stat Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter pt-space-sm">
+<!-- Card 1 -->
+<div class="bg-surface-container-low/80 backdrop-blur-md p-space-lg rounded-xl shadow-md flex flex-col gap-space-sm relative overflow-hidden group hover:bg-surface-container transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-xs text-label-xs text-primary uppercase tracking-widest font-mono">FACILITY // 01</span>
+<span class="material-symbols-outlined text-primary text-[20px]">local_airport</span>
+</div>
+<span class="font-label-xs text-label-xs text-on-surface-variant uppercase">Base Airport</span>
+<div class="flex items-baseline gap-space-xs">
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-semibold">KMLB</h3>
+<span class="font-label-code text-label-code text-primary">MLB</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Melbourne Orlando Intl. Runway 09R/27L (10,181 ft) &amp; 09L/27R. Field elevation: 33 ft MSL. Towered Class D operations.
+          </p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-low/80 backdrop-blur-md p-space-lg rounded-xl shadow-md flex flex-col gap-space-sm relative overflow-hidden group hover:bg-surface-container transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-xs text-label-xs text-secondary uppercase tracking-widest font-mono">EQUIPMENT // 02</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">flight_takeoff</span>
+</div>
+<span class="font-label-xs text-label-xs text-on-surface-variant uppercase">Primary Aircraft</span>
+<div class="flex items-baseline gap-space-xs">
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-semibold">Piper PA-28</h3>
+<span class="font-label-code text-label-code text-secondary">Archer TX</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Garmin G1000 NXi Integrated Flight Deck, Lycoming O-360-A4M (180 HP), dual nav/comms, ADS-B In/Out situational awareness.
+          </p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-low/80 backdrop-blur-md p-space-lg rounded-xl shadow-md flex flex-col gap-space-sm relative overflow-hidden group hover:bg-surface-container transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-xs text-label-xs text-tertiary uppercase tracking-widest font-mono">OBJECTIVE // 03</span>
+<span class="material-symbols-outlined text-tertiary text-[20px]">military_tech</span>
+</div>
+<span class="font-label-xs text-label-xs text-on-surface-variant uppercase">Target Certification</span>
+<div class="flex items-baseline gap-space-xs">
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-semibold">PPL ➔ IR</h3>
+<span class="font-label-code text-label-code text-tertiary">FAA</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Private Pilot Certificate (Spring 2026 checkride) followed immediately by Instrument Rating and Commercial Multi-Engine pipeline.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: FLIGHT LOG & TRAINING MILESTONES -->
+<section class="relative z-10 w-full px-margin-sm md:px-margin lg:px-margin-lg py-space-xl" id="flight-log">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<!-- Section Title Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code text-label-code text-primary uppercase font-mono tracking-widest">// TELEMETRY LOGBOOK // 02</span>
+<span class="h-px w-16 bg-primary/40"></span>
+</div>
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl uppercase font-semibold text-on-surface">
+            Flight Training Progress &amp; Milestones
+          </h2>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container px-space-md py-space-xs rounded-lg">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-code text-label-code text-secondary uppercase font-mono">STAGE 1 EVALUATION PENDING</span>
+</div>
+</div>
+<!-- Live Telemetry Hours HUD Quadrant -->
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-gutter">
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-xs shadow-md">
+<span class="font-label-xs text-label-xs text-on-surface-variant uppercase">DUAL FLIGHT INSTRUCTION</span>
+<span class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary font-mono font-bold leading-none">32.4</span>
+<span class="font-label-code text-label-code text-on-surface-variant">LOGGED HOURS (PA-28)</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-xs shadow-md">
+<span class="font-label-xs text-label-xs text-on-surface-variant uppercase">GROUND INSTRUCTION</span>
+<span class="font-display-lg text-display-lg-mobile md:text-display-lg text-tertiary font-mono font-bold leading-none">48.0</span>
+<span class="font-label-code text-label-code text-on-surface-variant">AERODYNAMICS &amp; FAR/AIM</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-xs shadow-md">
+<span class="font-label-xs text-label-xs text-on-surface-variant uppercase">SIMULATOR TIME (AATD)</span>
+<span class="font-display-lg text-display-lg-mobile md:text-display-lg text-secondary font-mono font-bold leading-none">14.5</span>
+<span class="font-label-code text-label-code text-on-surface-variant">REDBIRD FMX MOTION</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-xs shadow-md">
+<span class="font-label-xs text-label-xs text-on-surface-variant uppercase">TOTAL LANDINGS LOGGED</span>
+<span class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface font-mono font-bold leading-none">58</span>
+<span class="font-label-code text-label-code text-on-surface-variant">TOUCH-&amp;-GO + FULL STOP</span>
+</div>
+</div>
+<!-- Training Pipeline Milestones Timeline -->
+<div class="flex flex-col gap-space-md bg-surface-container/60 backdrop-blur-md p-space-lg rounded-xl shadow-lg">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-code text-label-code uppercase tracking-widest text-primary font-mono">STAGE TRACKER // PART 141 SYLLABUS</span>
+<span class="font-label-code text-label-code text-on-surface-variant">ESTIMATED COMPLETION: MAY 2026</span>
+</div>
+<!-- Steps Grid -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter relative">
+<!-- Item 1 -->
+<div class="flex flex-col gap-space-xs p-space-md rounded-lg bg-surface-container-high/80 relative">
+<div class="flex items-center justify-between">
+<span class="font-label-xs text-label-xs font-mono text-tertiary uppercase">PHASE 01</span>
+<span class="px-space-xs py-0.5 rounded bg-tertiary-container/20 text-tertiary font-label-xs text-label-xs font-mono uppercase">85% COMPLETE</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface font-medium">Ground School &amp; Pre-Solo</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Aviation weather charts, airspace classifications, FAR/AIM compliance, and emergency maneuvers.
+            </p>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 mt-2">
+<div class="bg-tertiary h-1.5 rounded-full w-[85%]"></div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex flex-col gap-space-xs p-space-md rounded-lg bg-surface-container-high/80 relative">
+<div class="flex items-center justify-between">
+<span class="font-label-xs text-label-xs font-mono text-secondary uppercase">PHASE 02</span>
+<span class="px-space-xs py-0.5 rounded bg-secondary-container/20 text-secondary font-label-xs text-label-xs font-mono uppercase animate-pulse">ACTIVE FOCUS</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface font-medium">First Solo Flight</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Pattern circuits at KMLB Runway 09R. Pre-solo written endorsement completed. Awaiting chief pilot signoff.
+            </p>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 mt-2">
+<div class="bg-secondary h-1.5 rounded-full w-[60%]"></div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex flex-col gap-space-xs p-space-md rounded-lg bg-surface-container-high/80 relative">
+<div class="flex items-center justify-between">
+<span class="font-label-xs text-label-xs font-mono text-on-surface-variant uppercase">PHASE 03</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-xs text-label-xs font-mono uppercase">QUEUED</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface font-medium">Cross-Country Navigation</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Triangular flight plan: KMLB ➔ KVRB (Vero Beach) ➔ KOCF (Ocala). Pilotage, dead reckoning, and VOR tracking.
+            </p>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 mt-2">
+<div class="bg-outline-variant h-1.5 rounded-full w-[10%]"></div>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="flex flex-col gap-space-xs p-space-md rounded-lg bg-surface-container-high/80 relative">
+<div class="flex items-center justify-between">
+<span class="font-label-xs text-label-xs font-mono text-on-surface-variant uppercase">PHASE 04</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-xs text-label-xs font-mono uppercase">TARGET: MAY '26</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface font-medium">Checkride &amp; FAA PPL</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              FAA Practical Exam with Designated Pilot Examiner (DPE). Oral defense and flight testing to ACS standards.
+            </p>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 mt-2">
+<div class="bg-outline-variant h-1.5 rounded-full w-0"></div>
+</div>
+</div>
+</div>
+<!-- Cross Country Interactive SVG Route Vector -->
+<div class="mt-space-md p-space-md bg-surface-container-lowest rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code text-primary uppercase font-mono">CROSS-COUNTRY MISSION VECTOR // ROUTE PREVIEW</span>
+<span class="font-label-xs text-label-xs text-on-surface-variant">TOTAL DISTANCE: ~195 NM</span>
+</div>
+<div class="w-full h-32 relative overflow-hidden flex items-center justify-center">
+<svg class="w-full h-full text-primary" preserveaspectratio="none" viewbox="0 0 600 120">
+<!-- Dashed Route Line -->
+<path class="opacity-80" d="M 60 70 L 260 25 L 520 90 Z" fill="none" stroke="currentColor" stroke-dasharray="6 6" stroke-width="2"></path>
+<!-- Waypoint Dots -->
+<circle class="fill-primary" cx="60" cy="70" r="5"></circle>
+<circle class="fill-secondary" cx="260" cy="25" r="5"></circle>
+<circle class="fill-tertiary" cx="520" cy="90" r="5"></circle>
+<!-- Labels -->
+<text fill="#c3f5ff" font-family="JetBrains Mono" font-size="12" text-anchor="middle" x="60" y="100">KMLB (DEP)</text>
+<text fill="#ffc080" font-family="JetBrains Mono" font-size="12" text-anchor="middle" x="260" y="18">KOCF (WP1)</text>
+<text fill="#aeffbf" font-family="JetBrains Mono" font-size="12" text-anchor="middle" x="520" y="112">KVRB (WP2)</text>
+</svg>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: ACADEMICS & TECHNICAL DISCIPLINES (BENTO GRID) -->
+<section class="relative z-10 w-full px-margin-sm md:px-margin lg:px-margin-lg py-space-xl bg-surface-container/30">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<!-- Section Title Header -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code text-label-code text-primary uppercase font-mono tracking-widest">// AERONAUTICAL CURRICULUM // 03</span>
+<span class="h-px w-16 bg-primary/40"></span>
+</div>
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl uppercase font-semibold text-on-surface">
+          Academics &amp; Technical Disciplines
+        </h2>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Bento Box 1: Large Featured Card (Spans 2 cols) -->
+<div class="md:col-span-2 bg-surface-container-low p-space-lg rounded-xl shadow-md flex flex-col justify-between gap-space-md group hover:bg-surface-container transition-all relative overflow-hidden">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-xs text-label-xs text-primary font-mono uppercase">DISCIPLINE 01 // CORE PHYSICS</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-semibold">Aerodynamics &amp; Aircraft Systems</h3>
+</div>
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined">air</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            In-depth study of low-speed airfoil theory, Bernoulli's principle, Newtonian lift vectors, induced and parasitic drag divergence, boundary layer behavior, and spin dynamics recovery. Includes comprehensive mechanical analysis of fuel-injected Lycoming engines, dual-magneto ignition circuits, hydraulic braking systems, and flight control linkages.
+          </p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-space-xs">
+<div class="p-space-sm bg-surface-container-high rounded flex flex-col">
+<span class="font-label-xs text-label-xs text-on-surface-variant">STALL SPEED (Vs0)</span>
+<span class="font-telemetry-readout text-telemetry-readout text-primary">45 KCAS</span>
+</div>
+<div class="p-space-sm bg-surface-container-high rounded flex flex-col">
+<span class="font-label-xs text-label-xs text-on-surface-variant">BEST GLIDE (Vg)</span>
+<span class="font-telemetry-readout text-telemetry-readout text-secondary">76 KIAS</span>
+</div>
+<div class="p-space-sm bg-surface-container-high rounded flex flex-col">
+<span class="font-label-xs text-label-xs text-on-surface-variant">MAX GROSS WT</span>
+<span class="font-telemetry-readout text-telemetry-readout text-tertiary">2,550 LBS</span>
+</div>
+</div>
+</div>
+<!-- Bento Box 2: Aviation Weather & Radar Analysis -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-md flex flex-col justify-between gap-space-md group hover:bg-surface-container transition-all">
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-xs text-label-xs text-secondary font-mono uppercase">DISCIPLINE 02 // METEOROLOGY</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Weather &amp; Radar Analysis</h3>
+</div>
+<div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined">thunderstorm</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Decryption of METAR, TAF, Skew-T log-P convective indices, and Doppler radar reflectivities. Analyzing Florida Atlantic sea-breeze convergence boundaries and severe microburst avoidance protocols.
+          </p>
+<div class="bg-surface-container-high p-space-sm rounded font-label-code text-label-code text-primary font-mono">
+            METAR KMLB 142153Z 08009KT 10SM FEW025 24/18 A3004
+          </div>
+</div>
+<!-- Bento Box 3: Avionics & Glass Cockpits -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-md flex flex-col justify-between gap-space-md group hover:bg-surface-container transition-all">
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-xs text-label-xs text-primary font-mono uppercase">DISCIPLINE 03 // AVIONICS</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Glass Cockpits &amp; WAAS</h3>
+</div>
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined">navigation</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Garmin G1000 NXi operation: synthetic vision, AHRS reversionary modes, engine indication systems (EIS), LPV RNAV approaches, autopilot coupling, and cross-check scan methodologies.
+          </p>
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-primary font-label-xs text-label-xs font-mono">G1000 NXi</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-xs text-label-xs font-mono">WAAS LPV</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-tertiary font-label-xs text-label-xs font-mono">GFC 700 AP</span>
+</div>
+</div>
+<!-- Bento Box 4: Aviation Safety & Human Factors (Spans 2 cols) -->
+<div class="md:col-span-2 bg-surface-container-low p-space-lg rounded-xl shadow-md flex flex-col justify-between gap-space-md group hover:bg-surface-container transition-all relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-xs text-label-xs text-tertiary font-mono uppercase">DISCIPLINE 04 // PROTOCOLS</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-semibold">Safety &amp; Human Factors</h3>
+</div>
+<div class="w-10 h-10 rounded-full bg-tertiary/10 flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined">health_and_safety</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Crew Resource Management (CRM) philosophy, Aeronautical Decision Making (ADM), situational awareness preservation under high cognitive load, and hazardous attitude mitigation. Thorough adherence to preflight risk assessment matrices including PAVE, 5Ps, and the I'M SAFE checklist.
+          </p>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs pt-space-xs">
+<div class="p-space-xs bg-surface-container-high rounded text-center">
+<span class="font-label-xs text-label-xs text-tertiary font-mono block">ILLNESS</span>
+<span class="font-label-code text-label-code text-on-surface">CLEARED</span>
+</div>
+<div class="p-space-xs bg-surface-container-high rounded text-center">
+<span class="font-label-xs text-label-xs text-tertiary font-mono block">MEDICATION</span>
+<span class="font-label-code text-label-code text-on-surface">NONE</span>
+</div>
+<div class="p-space-xs bg-surface-container-high rounded text-center">
+<span class="font-label-xs text-label-xs text-tertiary font-mono block">STRESS</span>
+<span class="font-label-code text-label-code text-on-surface">NOMINAL</span>
+</div>
+<div class="p-space-xs bg-surface-container-high rounded text-center">
+<span class="font-label-xs text-label-xs text-tertiary font-mono block">FATIGUE</span>
+<span class="font-label-code text-label-code text-on-surface">RESTED (8H)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: CONTACT & FLIGHT CHANNELS -->
+<section class="relative z-10 w-full px-margin-sm md:px-margin lg:px-margin-lg py-space-xl" id="contact">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<!-- Section Title Header -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code text-label-code text-primary uppercase font-mono tracking-widest">// FREQUENCY COMM // 04</span>
+<span class="h-px w-16 bg-primary/40"></span>
+</div>
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl uppercase font-semibold text-on-surface">
+          Establish Contact
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Available for collegiate aviation collaborations, flight training inquiries, mentoring, and aerospace discussions.
+        </p>
+</div>
+<!-- Main Communications Glass Card -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
+<!-- Dispatch Channel Information Column -->
+<div class="lg:col-span-5 bg-surface-container-low p-space-lg rounded-xl shadow-md flex flex-col justify-between gap-space-lg">
+<div class="flex flex-col gap-space-md">
+<span class="font-label-code text-label-code text-primary uppercase font-mono tracking-wider">OFFICIAL FREQUENCIES</span>
+<!-- Email Display with Copy Action -->
+<div class="flex flex-col gap-space-xs bg-surface-container p-space-md rounded-lg">
+<span class="font-label-xs text-label-xs text-on-surface-variant uppercase">FIT INSTITUTIONAL EMAIL</span>
+<div class="flex items-center justify-between gap-space-xs">
+<span class="font-label-code text-label-code text-primary select-all" id="email-address">simonguo.aviation@fit.edu</span>
+<button class="p-1 rounded bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary transition-colors" id="copy-email-btn" title="Copy Email">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+<span class="font-label-xs text-label-xs text-tertiary hidden" id="copy-status">Email copied to clipboard!</span>
+</div>
+<!-- Florida Tech Base Coordinates -->
+<div class="flex flex-col gap-space-xs bg-surface-container p-space-md rounded-lg">
+<span class="font-label-xs text-label-xs text-on-surface-variant uppercase">BASE OF OPERATIONS</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Florida Institute of Technology</span>
+<span class="font-label-xs text-label-xs text-on-surface-variant">Emil Buehler Center for Aviation Training &amp; Research</span>
+<span class="font-label-code text-label-code text-secondary font-mono mt-1">1050 S. Babcock St, Melbourne, FL 32901</span>
+</div>
+<!-- External Aviation Badges -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-xs text-label-xs text-on-surface-variant uppercase">EXTERNAL PILOT IDENTIFIERS</span>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="flex items-center gap-space-xs p-space-xs rounded bg-surface-container">
+<span class="material-symbols-outlined text-primary text-[18px]">menu_book</span>
+<div class="flex flex-col">
+<span class="font-label-xs text-label-xs text-on-surface font-semibold">ForeFlight</span>
+<span class="font-label-xs text-label-xs text-tertiary">Verified Pilot</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs p-space-xs rounded bg-surface-container">
+<span class="material-symbols-outlined text-secondary text-[18px]">radar</span>
+<div class="flex flex-col">
+<span class="font-label-xs text-label-xs text-on-surface font-semibold">FlightRadar24</span>
+<span class="font-label-xs text-label-xs text-secondary">N314FT Active</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- VHF Radio Style Callout -->
+<div class="p-space-sm bg-surface-container-lowest rounded flex items-center justify-between">
+<span class="font-label-code text-label-code text-on-surface-variant">STANDBY COMM: 121.90 (GND)</span>
+<span class="font-label-code text-label-code text-primary">TWR: 118.20</span>
+</div>
+</div>
+<!-- Dispatch Contact Form Column -->
+<div class="lg:col-span-7 bg-surface-container-low p-space-lg rounded-xl shadow-md flex flex-col justify-between">
+<form class="flex flex-col gap-space-md" id="contact-form" onsubmit="event.preventDefault(); handleTransmit();">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code text-primary uppercase font-mono tracking-wider">DISPATCH TRANSMISSION</span>
+<span class="font-label-xs text-label-xs text-on-surface-variant">PRIORITY 1 TRANSMISSION</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-xs text-label-xs text-on-surface-variant uppercase tracking-wider" for="caller-name">Pilot / Sender Name</label>
+<input class="bg-surface-container-lowest text-on-surface px-space-md py-space-sm rounded font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary placeholder-on-surface-variant/40" id="caller-name" placeholder="e.g. Capt. James Miller" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-xs text-label-xs text-on-surface-variant uppercase tracking-wider" for="caller-org">Callsign / Organization</label>
+<input class="bg-surface-container-lowest text-on-surface px-space-md py-space-sm rounded font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary placeholder-on-surface-variant/40" id="caller-org" placeholder="e.g. United Aviate / Embry-Riddle" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-xs text-label-xs text-on-surface-variant uppercase tracking-wider" for="caller-email">Return Frequency (Email)</label>
+<input class="bg-surface-container-lowest text-on-surface px-space-md py-space-sm rounded font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary placeholder-on-surface-variant/40" id="caller-email" placeholder="pilot@airline.com" required="" type="email"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-xs text-label-xs text-on-surface-variant uppercase tracking-wider" for="caller-msg">Flight Message Payload</label>
+<textarea class="bg-surface-container-lowest text-on-surface px-space-md py-space-sm rounded font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary placeholder-on-surface-variant/40 resize-none" id="caller-msg" placeholder="Type dispatch notes, inquiries, or greetings here..." required="" rows="4"></textarea>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-code text-label-code text-tertiary hidden" id="dispatch-alert">Transmission sent successfully via KMLB Tower.</span>
+<button class="ml-auto inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded bg-primary-container text-on-primary-container font-label-code text-label-code tracking-widest uppercase font-semibold shadow-md hover:opacity-90 transition-opacity" id="transmit-btn" type="submit">
+<span>Transmit Transmission</span>
+<span class="material-symbols-outlined text-[16px]">send</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Simple micro-interactions
+  const copyBtn = document.getElementById('copy-email-btn');
+  const copyStatus = document.getElementById('copy-status');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', () => {
+      navigator.clipboard.writeText('simonguo.aviation@fit.edu').then(() => {
+        if (copyStatus) {
+          copyStatus.classList.remove('hidden');
+          setTimeout(() => {
+            copyStatus.classList.add('hidden');
+          }, 3000);
+        }
+      });
+    });
+  }
+
+  function handleTransmit() {
+    const btn = document.getElementById('transmit-btn');
+    const alertMsg = document.getElementById('dispatch-alert');
+    if (btn) {
+      btn.innerHTML = '<span>Transmitting...</span>';
+      setTimeout(() => {
+        btn.innerHTML = '<span>Transmitted</span><span class="material-symbols-outlined text-[16px]">done</span>';
+        btn.classList.remove('bg-primary-container', 'text-on-primary-container');
+        btn.classList.add('bg-tertiary-container', 'text-on-tertiary-container');
+        if (alertMsg) alertMsg.classList.remove('hidden');
+      }, 700);
+    }
+  }
+</script></main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_8px_rgba(0,0,0,0.3)] mt-auto"><div class="w-full px-gutter-lg py-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex flex-col sm:flex-row items-center gap-space-xs text-center md:text-left"><span class="font-label-xs text-label-xs text-on-surface-variant uppercase tracking-wider">Simon Guo © 2026 • Cleared for Takeoff • Florida Tech • KMLB Melbourne FL</span></div><div class="flex flex-wrap items-center justify-center gap-space-md"><a class="font-label-code text-label-code text-on-surface-variant hover:text-primary transition-colors uppercase" href="#">Email</a><a class="font-label-code text-label-code text-on-surface-variant hover:text-primary transition-colors uppercase" href="#">LinkedIn</a><a class="font-label-code text-label-code text-on-surface-variant hover:text-primary transition-colors uppercase" href="#">Instagram</a><a class="font-label-code text-label-code text-on-surface-variant hover:text-primary transition-colors uppercase" href="#">ForeFlight</a><a class="font-label-code text-label-code text-on-surface-variant hover:text-primary transition-colors uppercase" href="#">FlightRadar24</a></div></div></footer></body></html>
